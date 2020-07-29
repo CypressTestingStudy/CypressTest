@@ -1,4 +1,4 @@
-# CNN Elections Browser Testing Automation
+# Cypress Test
 
 ## SetUp
 
