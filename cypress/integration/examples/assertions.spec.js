@@ -24,7 +24,7 @@ context('Assertions', () => {
         // and then match using regular expression
         .invoke('text')
         .should('match', /column content/i)
-
+        console.log('Paso por aqui agua que no la vi! Async');
       // a better way to check element's text content against a regular expression
       // is to use "cy.contains"
       // https://on.cypress.io/contains
@@ -79,7 +79,7 @@ context('Assertions', () => {
 
           // array should have length of 3
           expect(paragraphs, 'has 3 paragraphs').to.have.length(3)
-
+          console.log('Paso por aqui agua que no la vi! Async');
           // use second argument to expect(...) to provide clear
           // message with each assertion
           expect(paragraphs, 'has expected text in each paragraph').to.deep.eq([
