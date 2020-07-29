@@ -79,7 +79,7 @@ context('Assertions', () => {
 
           // array should have length of 3
           expect(paragraphs, 'has 3 paragraphs').to.have.length(3)
-
+          console.log('Paso por aqui agua que no la vi! Async');
           // use second argument to expect(...) to provide clear
           // message with each assertion
           expect(paragraphs, 'has expected text in each paragraph').to.deep.eq([
