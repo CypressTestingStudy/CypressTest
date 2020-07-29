@@ -24,7 +24,7 @@ context('Assertions', () => {
         // and then match using regular expression
         .invoke('text')
         .should('match', /column content/i)
-
+        console.log('Paso por aqui agua que no la vi! Async');
       // a better way to check element's text content against a regular expression
       // is to use "cy.contains"
       // https://on.cypress.io/contains
