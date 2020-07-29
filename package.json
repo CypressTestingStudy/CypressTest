@@ -1,0 +1,25 @@
+{
+  "name": "cypresstest",
+  "version": "1.0.0",
+  "description": "From Zero to Hero",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CypressTestingStudy/CypressTest.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Nerds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CypressTestingStudy/CypressTest/issues"
+  },
+  "homepage": "https://github.com/CypressTestingStudy/CypressTest#readme",
+  "devDependencies": {
+    "cypress": "^4.11.0"
+  }
+}
