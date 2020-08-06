@@ -1,0 +1,8 @@
+
+		
+	id		#idname      ---------------- tagname#idname
+	classname	.classname ---------------- tagname.classname
+	atributos		tagname[attribute=value]
+
+
+	
