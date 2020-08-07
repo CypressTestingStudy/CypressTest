@@ -1,5 +1,8 @@
 # Cypress Test
 
+
+[![CypressTest](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/ven6pg/master&style=social&logo=cypress)](https://dashboard.cypress.io/projects/ven6pg/runs)
+
 ## SetUp
 
 1. Configure a `cypress.json` file based on [cypress.sample.json](./cypress.sample.json) 
