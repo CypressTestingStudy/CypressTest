@@ -12,7 +12,7 @@ jobs:
         with:
           record: true
           start: npm run serve
-          working-directory: frontend
+          working-directory: CypressTest
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: 49bfa993-ad20-464c-b7ab-d9d27ae262c0
