@@ -25,8 +25,10 @@ npx cypress run
 ```
 #### Run specific test in Headless mode
 ```bash
-npx cupress run --testFile.js
+npx cypress run --testFile.js
 ```
-
-
+#### Run Headless mode with Dashboard Analysis
+```bash
+npx cypress run --record --key 49bfa993-ad20-464c-b7ab-d9d27ae262c0
+```
 
