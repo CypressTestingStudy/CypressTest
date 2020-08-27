@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/CypressTestingStudy/CypressTest#readme",
   "devDependencies": {
-    "cypress": "^4.12.1"
+    "cypress": "^5.0.0"
+  },
+  "dependencies": {
+    "mpx": "^1.0.3"
   }
 }
