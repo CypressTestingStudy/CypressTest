@@ -1,24 +1,25 @@
 // type definitions for Cypress object "cy"
 /// <reference types="cypress" />
 
-describe ('Selectors Class', () => {
-
-    const rutica = 'https://rahulshettyacademy.com/AutomationPractice/';
-
-    beforeEach(() => {
-        cy.visit(rutica);
-      })
+import {
+    Selectors
+  } from '../page-objects/indios-page';
 
     describe('Selectors Part 1', ()=> {
 
+        const rutica = 'https://rahulshettyacademy.com/AutomationPractice/';
+        const selectorPage = new Selectors();
+
+        beforeEach(() => {
+            cy.visit(rutica);
+          });
+    
         it('Should be select All RadioBtn', () =>  {
-            cy.get('[type="radio"]')
-            .check()
-            .should('be.checked');
+            selectorPage.optRadio();
         });
         it('Should be write into text', () => {
             cy.get('#autocomplete')
-            .type('Hola')
+            .type('Hola Mundo')
             .should('have.value', 'Hola');
         });
         it('Should be select an option of the dropdown', () => {
@@ -32,20 +33,5 @@ describe ('Selectors Class', () => {
             .should('be.checked');
         });
     });
-    
-    describe.skip('Selectors Part 2', () => {
-    
-        it('Shoud be open a new window', () => {
-            
-        });
-        it('Shoud be switch tab', () => {
-            
-        });
-        it('Shoud be show alert type JS', () => {
-            
-        });
-    });
-
-});
 
 
