@@ -3,6 +3,7 @@
 
 describe ('checkbox radio buttun & dropdown list also new tab', () => {
 
+
         it('My first test with other selectors and new tab', () => {
             cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
         //radio button 1
