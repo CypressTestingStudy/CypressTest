@@ -51,19 +51,29 @@
       "id": 13
     },
     {
-      "title": "Papuchito",
-      "author": "Henry",
-      "id": 14
-    },
-    {
-      "title": "Papuchito",
-      "author": "Henry",
+      "title": "Capuchon",
+      "author": "Jordi",
       "id": 15
     },
     {
       "title": "Papuchito",
       "author": "Henry",
       "id": 16
+    },
+    {
+      "title": "Marraneitor",
+      "author": "DanielFuentes",
+      "id": 17
+    },
+    {
+      "title": "Marraneitor",
+      "author": "DanielFuentes",
+      "id": 18
+    },
+    {
+      "title": "Marraneitor",
+      "author": "DanielFuentes",
+      "id": 19
     }
   ],
   "comments": [],
