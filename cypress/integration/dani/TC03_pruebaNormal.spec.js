@@ -4,7 +4,7 @@
 describe('Este es un test normalito Mi primer hola Mundo', () => {
   
 
-  it('Quiero comprar cukitos', () => {
+  it.only('Quiero comprar cukitos', () => {
       
     cy.visit("http://automationpractice.com/index.php");
       cy.get('.login').click();
@@ -14,7 +14,7 @@ describe('Este es un test normalito Mi primer hola Mundo', () => {
     
   });
 
-  it ('Ingresar el correo electronico para registrar en los cukitos fashion', () => {
+  it('Ingresar el correo electronico para registrar en los cukitos fashion', () => {
    
     cy.get('#email_create').type('nerd@gmail.com');
     cy.get('#SubmitCreate > span').click();

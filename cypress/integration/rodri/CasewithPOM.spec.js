@@ -1,22 +1,15 @@
-<reference types="cypress" />
+// type definitions for Cypress object "cy"
+/// <reference types="cypress" />
 
-import {
-    MyfirstPOM
-  } from "../../page-object/first-page";
+import {pomTestRodri} from "../../page-objects/pomRodri";
 
-
-describe ('checkbox radio buttun & dropdown list also new tab', () => {
-    const prueba = new MyfirstPOM();  
-
+describe ('checkbox radio button & dropdown list also new tab', () => {
+    const pomRodri = new pomTestRodri();  
     it('My first test with other selectors and new tab', () => {   
-        prueba.navigate();
-
-        prueba.radiobutton();
-
-        prueba.drowdown();
-    
-        prueba.checkbox();
-       
+     pomRodri.navigate();
+     pomRodri.radiobutton();
+     pomRodri.dropdownoption();
+     pomRodri.checkbox();
     }); 
   });
 
