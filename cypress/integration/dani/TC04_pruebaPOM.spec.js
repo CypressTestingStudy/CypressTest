@@ -9,7 +9,7 @@ describe('Registrar usuario por POM', () => {
 
   const pageObjectlindo = new AlgoMasCool();
 
-  it('Registremos el usuario', () =>  {
+  it.skip('Registremos el usuario', () =>  {
     pageObjectlindo.registrarUsuario();
   });
 

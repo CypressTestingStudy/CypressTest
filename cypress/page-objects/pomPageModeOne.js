@@ -2,18 +2,14 @@
 
 export class AlgoMasCool {
 
-  email(){
-    return cy.get('.email_created');
-  }
-
     registrarUsuario() {
-        this.email.type('nerd@gmail.com');
-        cy.get('#SubmitCreate > span').click();
-        cy.get('#id_gender1').check();
-        cy.get('#customer_firstname').type('Daniel');
-        cy.get('#customer_lastname').type('Fuentes');
-        cy.get('#email').should('have.value', 'nerd@gmail.com');
-        cy.get('#passwd').type('12345');
+      cy.get('.email_created').type('nerd@gmail.com');
+      cy.get('#SubmitCreate > span').click();
+      cy.get('#id_gender1').check();
+      cy.get('#customer_firstname').type('Daniel');
+      cy.get('#customer_lastname').type('Fuentes');
+      cy.get('#email').should('have.value', 'nerd@gmail.com');
+      cy.get('#passwd').type('12345');
         cy.get('#days').select('10  ').should('have.value', '10  ');
         cy.get('#months').select('July ').should('have.value', 'July ');
         cy.get('#years').select('1985  ').should('have.value', '1985  ');
