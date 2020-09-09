@@ -1,28 +1,72 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 4
     },
     {
-      "id": 3,
-      "title": "PapiChulo",
-      "author": "YefryZudo"
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 5
     },
     {
-      "id": 4,
-      "title": "Como encontrar los localizadores y no morir en el intento",
-      "author": "Henry Perez"
-    }
-  ],
-  "comments": [
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 6
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 7
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 8
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 9
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 10
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 11
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 12
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 13
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 14
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 15
+    },
+    {
+      "title": "Papuchito",
+      "author": "Henry",
+      "id": 16
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

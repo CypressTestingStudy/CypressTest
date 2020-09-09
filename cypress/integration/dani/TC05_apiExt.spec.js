@@ -10,6 +10,7 @@ describe('API Testing 101', () => {
   it('GET - Read Only ', () => {
     cy.request('GET', '/employees');
     });
+    
   // Metodo para Consultar un Servicio, validar que el Status Code sea igual a 200, que el body no este vacio
   // y que la longitud del body sea igual a 24
   it('GET - Read Step One ', () => {

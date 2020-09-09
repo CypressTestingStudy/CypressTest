@@ -6,14 +6,34 @@ describe('API Testing LocalEnv', () => {
     cy.request('/posts')
       .its('headers')
       .its('content-type')
-      .should('include', 'application/json');
+      .should('include', 'application/json').and('have.length', 31);
   });
 
-  it('TC02 - GET - Loads 3 items', () => {
-    cy.request('/posts')
-      .its('body')
-      .should('have.length', 3);
+  it('TC02 - POST - Crear un Item', () => {
+    cy
+    .request('POST', '/posts', { title: 'Papuchito' , author: 'Henry'})
+    .then((response) => {
+    // response.body is automatically serialized into JSON
+    expect(response.body).to.have.property('title', 'Papuchito'); // true
   });
-  
- 
+  });
+
+
+  it('TC03 - PUT - Actualizar un Item de la listaw ', () => {
+    cy
+    .request('PUT', '/posts', { title: 'Papuchito' , author: 'Henry'})
+    .then((response) => {
+    // response.body is automatically serialized into JSON
+    expect(response.body).to.have.property('title', 'Papuchito'); // true
+  });
+  });
+
+  it('TC04 - DELETE - Borrar un item de la lista', () => {
+    cy
+    .request('DELETE', '/posts/3')
+    .then((response) => {
+    // response.body is automatically serialized into JSON
+    expect(response.body).to.have.empty;
+  });
+  });
 });
