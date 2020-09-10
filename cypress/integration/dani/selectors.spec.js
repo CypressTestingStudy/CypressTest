@@ -16,6 +16,7 @@ describe ('Selectors Class', () => {
             .check()
             .should('be.checked');
         });
+        debugger;
         it('Should be write into text', () => {
             cy.get('#autocomplete')
             .type('Hola')

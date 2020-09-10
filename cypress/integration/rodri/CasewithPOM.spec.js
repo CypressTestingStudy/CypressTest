@@ -1,24 +1,27 @@
-<reference types="cypress" />
+// type definitions for Cypress object "cy"
+/// <reference types="cypress" />
 
 import {
-    MyfirstPOM
-  } from "../../page-object/first-page";
+  MyfirstPOM
+} from "../../Page-Objects/first-page";
 
+describe ('my fisrt case with POM', () => {
+  const automation = new MyfirstPOM();
 
-describe ('checkbox radio buttun & dropdown list also new tab', () => {
-    const prueba = new MyfirstPOM();  
-
-    it('My first test with other selectors and new tab', () => {   
-        prueba.navigate();
-
-        prueba.radiobutton();
-
-        prueba.drowdown();
+  it('My first test with other selectors and new tab', () => {
+      automation.navigator();
+      
+      automation.radiobutton()
+      .check()
+      .should('be.checked');
+      
+      automation.dropdownoption()
+      .select('option2')  //text that you want from the dropdown
+      .should('have.value', 'option2');
+      
+      automation.checkbox()
+      .check()
+      .should('be.checked'); 
     
-        prueba.checkbox();
-       
-    }); 
-  });
-
-
-
+  }); 
+});

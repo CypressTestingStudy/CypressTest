@@ -12,10 +12,11 @@ describe ('checkbox radio buttun & dropdown list also new tab', () => {
             .should('be.checked');
         
         // dropdown option 2
+       
             cy.get('#dropdown-class-example')   //id= #id
             .select('option2')  //text that you want from the dropdown
             .should('have.value', 'option2');
-      
+   
         // checkbox 3
             cy.get('#checkBoxOption3')
             .check()
