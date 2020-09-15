@@ -1,31 +1,87 @@
 /// <reference types="Cypress" />
 
-describe('My first test suit by Cris', () =>{
+describe('datadriven with commands',  () =>{
 
-    it('My first test case by Cris', () => {
-        //test steps
-        cy.visit('https://www.rahulshettyacademy.com/seleniumPractise/#/')
-        cy.get('.search-keyword').type('ca')
-        cy.wait(2000)
-        cy.get('.products').find('.product').should('have.length',4)
-        cy.get('.products').find('.product').eq(0).contains('ADD TO CART').click()
+it('buying my groseries', () => {
+        cy.buying('Tomato')
+        cy.get('#root > div > header > div > div.cart > div.cart-info > table > tbody > tr:nth-child(2) > td:nth-child(3) > strong')
+        .should('have.text','16')
 
-        cy.get('.products').find('.product').each(($el,index,$list) => {
-        const vegname = $el.find('h4.product-name').text()
-        if(vegname.includes('Tomato'))
-        {
-        $el.find('button').click()
-        }
-        })
-        cy.get('.brand').should('have.text','GREENKART')
-    })
+        cy.buying('Mushroom')
+        cy.get('#root > div > header > div > div.cart > div.cart-info > table > tbody > tr:nth-child(2) > td:nth-child(3) > strong')
+        .should('have.text','91')
 
+        cy.buying('Brinjal')
+        cy.get('#root > div > header > div > div.cart > div.cart-info > table > tbody > tr:nth-child(2) > td:nth-child(3) > strong')
+        .should('have.text','126')
 
+        cy.buying('Cucumber')
+        cy.get('#root > div > header > div > div.cart > div.cart-info > table > tbody > tr:nth-child(2) > td:nth-child(3) > strong')
+        .should('have.text','174')
 })
+}) 
+
+ /* okay
+ 
+ describe('My first test suit by Cris', () =>{
+    beforeEach(() => {
+        cy.visit('https://www.rahulshettyacademy.com/seleniumPractise/#/')
+        cy.wait(2000)
+    })
+        it('My first datadriven', () => {
+           
+            cy.get('.products').find('.product').each(($el,index,$list) => {
+                const vegname = $el.find('h4.product-name').text()
+                if(vegname.includes('Mushroom'))
+                {
+                $el.find('button').click()
+                }
+                })
+                cy.get('.brand').should('have.text','GREENKART')
+           
+        })
+        it('My first datadriven', () => {
+           
+            cy.get('.products').find('.product').each(($el,index,$list) => {
+                const vegname = $el.find('h4.product-name').text()
+                if(vegname.includes('Tomato'))
+                {
+                $el.find('button').click()
+                }
+                })
+                cy.get('.brand').should('have.text','GREENKART')
+           
+        })
+    }) */
 
 
-/*
-        cy.get('.products').find('.product').should('have.length',30)
-        var products, i;
-        products = ["Tomato","Brinjal","mushroom"]
-        for (i) */
+/* //https://docs.cypress.io/examples/examples/tutorials.html#7-Filters-and-data-driven-tests
+describe('My first test suit by Cris', () =>{
+beforeEach(() => {
+    cy.visit('https://www.rahulshettyacademy.com/seleniumPractise/#/')
+    cy.wait(2000)
+})
+    it('My first datadriven', () => {
+        const item =[
+            {Producto:'Mushroom'},
+            {Producto:'Tomato'}
+        ]
+        cy.wrap(item)
+        .each(item => {
+            cy.contains(item.Producto).click()
+
+            cy.get('.products').find('.product').each(($el,index,$list) => {
+                const vegname = $el.find('h4.product-name').text()
+                if(vegname.includes('item'))
+                {
+                $el.find('button').click()
+                }
+                })
+                cy.get('.brand').should('have.text','GREENKART')
+        }
+
+        )
+
+       
+    })
+}) */

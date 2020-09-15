@@ -1,0 +1,12 @@
+[
+  {
+  "user": "admin@yourstore.com",
+  "password":"admin"
+
+  },
+  {
+    "user": "admin1@yourstore.com",
+    "password": "admin1"
+  
+    }
+  ]

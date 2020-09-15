@@ -23,3 +23,18 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+Cypress.Commands.add("buying", (producto) => { 
+    
+            cy.visit('https://www.rahulshettyacademy.com/seleniumPractise/#/')
+            cy.wait(2000)
+            
+            cy.get('.products').find('.product').each(($el,index,$list) => {
+                    const vegname = $el.find('h4.product-name').text()
+                    if(vegname.includes(producto))
+                    {
+                    $el.find('button').click()
+                    }
+                    })
+                    cy.get('.brand').should('have.text','GREENKART')
+               
+            })
