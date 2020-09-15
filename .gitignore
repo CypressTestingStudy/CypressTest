@@ -1,2 +1,4 @@
 node_modules
 cypress/integration/.DS_Store
+package_lock.jason
+package.jason

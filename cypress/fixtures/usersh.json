@@ -1,0 +1,12 @@
+[
+  {"user": "admin1@yourstore.com","password": "admin1"},
+  {"user": "admin2@yourstore.com","password": "admin2"},
+  {"user": "admin3@yourstore.com","password": "admin3"},
+  {"user": "admin4@yourstore.com","password": "1"},
+  {"user": "admin5@yourstore.com","password": "123"},
+  {"user": "admin6@yourstore.com","password": "aaa"},
+  {"user": "x","password": "admin1"},
+  {"user": "@yourstore.com","password": "admin2"},
+  {"user": "admin3","password": "admin3"}
+]
+
