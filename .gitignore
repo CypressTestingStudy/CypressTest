@@ -1,4 +1,26 @@
+# dependencies
 node_modules
+
 cypress/integration/.DS_Store
 package_lock.json
 package.json
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+=======
+
+
