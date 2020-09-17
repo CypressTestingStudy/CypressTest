@@ -1,3 +1,4 @@
+/*
 // type definitions for Cypress object "cy"
 /// <reference types="cypress" />
 
@@ -36,4 +37,4 @@ describe('API Testing LocalEnv', () => {
       expect(response.body).to.have.empty;
     });
     });
-  });
+  }); */
