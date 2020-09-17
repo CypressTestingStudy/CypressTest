@@ -35,7 +35,7 @@ describe('My first test suit by Rodri', () =>{
         cy.get('#root > div > div.products-wrapper > div > div:nth-child(3) > div.product-action > button')
         .click();
         cy.get('#root > div > header > div > div.cart > div.cart-info > table > tbody > tr:nth-child(2) > td:nth-child(3) > strong')
-        .should('have.text','205')
+        .should('have.text','204')
             //should('have.text','205')
         
         // run the test with and error, open dev tool, put the command and rerun
