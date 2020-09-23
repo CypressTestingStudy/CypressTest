@@ -2,7 +2,7 @@
 /// <reference types="cypress" />
 
 
-    describe('Selectors Part 1', ()=> {
+    describe.skip('Selectors Part 1', ()=> {
 
         const rutica = 'https://rahulshettyacademy.com/AutomationPractice/';
 

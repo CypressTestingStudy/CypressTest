@@ -4,7 +4,7 @@
 describe('Este es un test normalito Mi primer hola Mundo', () => {
   
 
-  it.only('Quiero comprar cukitos', () => {
+  it.skip('Quiero comprar cukitos', () => {
       
     cy.visit("http://automationpractice.com/index.php");
       cy.get('.login').click();
@@ -14,14 +14,13 @@ describe('Este es un test normalito Mi primer hola Mundo', () => {
     
   });
 
-  it('Ingresar el correo electronico para registrar en los cukitos fashion', () => {
+  it.skip('Ingresar el correo electronico para registrar en los cukitos fashion', () => {
    
     cy.get('#email_create').type('nerd@gmail.com');
     cy.get('#SubmitCreate > span').click();
     cy.get('#id_gender1').check();
     cy.get('#customer_firstname').type('Daniel');
     cy.get('#customer_lastname').type('Fuentes');
-
     cy.get('#company').type('Globant');
     cy.get('#address1').type('direccion1');
     cy.get('#address2').type('direccion2');

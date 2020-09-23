@@ -5,6 +5,6 @@ describe('My First Cypress Test by Dani', function() {
 
     it('Visits the ToolsQA Demo Page and check the menu items', function() {
     //Visit the Demo QA Website
-    cy.visit("https://www.toolsqa.com/");
+    cy.visit("https://www.cypress.io/");
   });
 });
